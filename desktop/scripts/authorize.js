@@ -10,7 +10,13 @@ window.onload = () => {
         headers: {
             authorization: `${tokenType} ${accessToken}`,
         },
-    }).then(result => result.json().then(result => result));
+    })
+    .then(response => {
+        console.log(response)
+        const { username, discriminator } = response;
+        document.getElementById('info').innerText += ` ${username}#${discriminator}`;
+    })
+    .catch(console.error);
 
     console.log(response)
 };
