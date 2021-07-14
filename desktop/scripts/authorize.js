@@ -11,12 +11,8 @@ window.onload = () => {
             authorization: `${tokenType} ${accessToken}`,
         },
     })
-    .then(response => {
+    .then(result => result.json())
+	.then(response => {
         console.log(response)
-        const { username, discriminator } = response;
-        document.getElementById('info').innerText += ` ${username}#${discriminator}`;
-    })
-    .catch(console.error);
-
-    console.log(response)
+	})
 };
