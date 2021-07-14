@@ -1,0 +1,47 @@
+.header {
+    overflow: hidden;
+    background-color: white;
+    color: #5865F1;
+    padding: 20px 10px;
+}
+
+.header a {
+    color: #5865F1;
+    text-decoration: none;
+}
+
+.header-right {
+    float: right;
+}
+
+.header-dropdown {
+    background-color: white;
+    display: none;
+}
+
+.header-dropdown-hidden {
+    display: none;
+    border-radius: 2px;
+    box-shadow: 0 0 4px 0 rgb(0 0 0 / 15%), 0 4px 10px 0 rgb(0 0 0 / 10%);
+    border: solid 1px #ddd;
+    background-color: #fff;
+    color: #5865F1;
+    text-align: center;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+.header-dropdown-hidden a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    .header a {
+        display: none;
+    }
+
+    .header-dropdown {
+        display: inline;
+    }
+}

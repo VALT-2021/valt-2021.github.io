@@ -1,0 +1,65 @@
+.header {
+    overflow: hidden;
+    background-color: #18191C;
+    color: #fff;
+    height: 40px;
+}
+
+.header a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #FFF;
+}
+
+.header a:hover {
+    text-decoration: none;
+    color: #747F8D;
+}
+
+.header-right {
+    float: right;
+}
+
+.header-user-avatar {
+    /*display: none;*/
+    border-radius: 100px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.header-modal-box {
+    display: none;
+    background: #18191c;
+    border-radius: 3px;
+    max-width: 220px;
+    padding: 8px 16px;
+    position: fixed;
+    width: 100vw;
+    z-index: 9999;
+    color: white;
+    margin-top: 3px;
+    margin-left: 82.5%;
+    margin-right: 10px;
+}
+
+.header-modal-box-intro {
+    font-size: small;
+    color: #A1A3A6;
+    display: block;
+}
+
+.header-modal-box-name {
+    color: white;
+    display: inline;
+    font-size: 17px;
+}
+
+.header-modal-box-tag {
+    color: #72767D;
+    display: inline;
+    font-size: 17px;
+}
+
+@media screen and (max-width: 500px) {
+    
+}

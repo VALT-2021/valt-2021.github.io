@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Hi there</title>
-        <script src="./scripts/authorize.js"></script>
+        <title>Welcome - BOTNAMEHERE</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles/main.css">
+        <link rel="stylesheet" href="./styles/hrefs.css">
+        <link rel="stylesheet" href="./components/header.css">
+        <link rel="stylesheet" href="./components/body.css">
+        <link rel="shortcut icon" href="../assets/shortcut_icon_circle_large.png">
+        <script src="./scripts/toggle.js"></script>
+        <script src="https://kit.fontawesome.com/2ef88033d7.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <a id="login" style="display: none;" href="https://discord.com/api/oauth2/authorize?client_id=862893192457224253&redirect_uri=https%3A%2F%2Fvalt-2021.github.io%2Fdesktop%2Findex.html&response_type=code&scope=identify">Identify Yourself</a>
+        <div class="header">
+            <a>lol</a>
+            <div class="header-right">
+                <img class="header-user-avatar" style="cursor: pointer;" onclick="clickAndToggle()" src="../assets/shortcut_icon.png">
+            </div>
+        </div>
+        <div class="header-modal-box" id="modal-box" style="display: none;">
+            <div class="header-modal-box-intro">Logged in as</div>
+            <div class="header-modal-box-name">Hello</div>
+            <div class="header-modal-box-tag">#0001</div>
+        </div>
+        <div class="body">
+        </div>
+        <!--a class="button" href="https://discord.com/api/oauth2/authorize?client_id=862893192457224253&redirect_uri=https%3A%2F%2Fvalt-2021.github.io%2Fdesktop%2Fclient%2Findex.html&response_type=code&scope=identify">lmao</a-->
     </body>
 </html>
